@@ -1,0 +1,27 @@
+PODS:
+  - RxCocoa (4.2.0):
+    - RxSwift (~> 4.0)
+  - RxFlow (1.5.0):
+    - RxCocoa (>= 4.2.0)
+    - RxSwift (>= 4.2.0)
+  - RxSwift (4.2.0)
+
+DEPENDENCIES:
+  - RxCocoa
+  - RxFlow
+  - RxSwift
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - RxCocoa
+    - RxFlow
+    - RxSwift
+
+SPEC CHECKSUMS:
+  RxCocoa: 0b54909c902e1e581212a03e690bbd94032d8baa
+  RxFlow: f44e449f4b32d7d95ef9ed5962fc66e7fa202308
+  RxSwift: 99e10317ddfcc7fbe01356aafd118fde4a0be104
+
+PODFILE CHECKSUM: f577956e1c7c677cd8fedda1597521d924b03314
+
+COCOAPODS: 1.5.3

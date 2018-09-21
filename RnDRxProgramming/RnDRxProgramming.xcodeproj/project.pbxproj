@@ -12,6 +12,7 @@
 		2030C51F2149930400AACC64 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2030C51D2149930400AACC64 /* Main.storyboard */; };
 		2030C5212149930600AACC64 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2030C5202149930600AACC64 /* Assets.xcassets */; };
 		2030C5242149930600AACC64 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2030C5222149930600AACC64 /* LaunchScreen.storyboard */; };
+		8C9FCFEC43FFF6BE6141B54B /* Pods_RnDRxProgramming.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37FAD381542BFB96CAEA690F /* Pods_RnDRxProgramming.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,10 @@
 		2030C5202149930600AACC64 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2030C5232149930600AACC64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2030C5252149930600AACC64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		208895A7215568B600352D31 /* RxSwiftPractice.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = RxSwiftPractice.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		225E5154EB797F61BB293D4F /* Pods-RnDRxProgramming.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RnDRxProgramming.release.xcconfig"; path = "Pods/Target Support Files/Pods-RnDRxProgramming/Pods-RnDRxProgramming.release.xcconfig"; sourceTree = "<group>"; };
+		273C6B28357D572DC60A4518 /* Pods-RnDRxProgramming.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RnDRxProgramming.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RnDRxProgramming/Pods-RnDRxProgramming.debug.xcconfig"; sourceTree = "<group>"; };
+		37FAD381542BFB96CAEA690F /* Pods_RnDRxProgramming.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RnDRxProgramming.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +34,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C9FCFEC43FFF6BE6141B54B /* Pods_RnDRxProgramming.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		01AF044E7604F73DD105053A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				37FAD381542BFB96CAEA690F /* Pods_RnDRxProgramming.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		2030C50D2149930400AACC64 = {
 			isa = PBXGroup;
 			children = (
 				2030C5182149930400AACC64 /* RnDRxProgramming */,
 				2030C5172149930400AACC64 /* Products */,
+				4206870E4E4E9823EEE060FE /* Pods */,
+				01AF044E7604F73DD105053A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +70,7 @@
 		2030C5182149930400AACC64 /* RnDRxProgramming */ = {
 			isa = PBXGroup;
 			children = (
+				208895A7215568B600352D31 /* RxSwiftPractice.playground */,
 				2030C5192149930400AACC64 /* AppDelegate.swift */,
 				2030C51B2149930400AACC64 /* ViewController.swift */,
 				2030C51D2149930400AACC64 /* Main.storyboard */,
@@ -64,6 +81,15 @@
 			path = RnDRxProgramming;
 			sourceTree = "<group>";
 		};
+		4206870E4E4E9823EEE060FE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				273C6B28357D572DC60A4518 /* Pods-RnDRxProgramming.debug.xcconfig */,
+				225E5154EB797F61BB293D4F /* Pods-RnDRxProgramming.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +97,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2030C5282149930600AACC64 /* Build configuration list for PBXNativeTarget "RnDRxProgramming" */;
 			buildPhases = (
+				6BC7D612D751FB4F82612266 /* [CP] Check Pods Manifest.lock */,
 				2030C5122149930400AACC64 /* Sources */,
 				2030C5132149930400AACC64 /* Frameworks */,
 				2030C5142149930400AACC64 /* Resources */,
+				6D60A048FA65681EA389532F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +157,49 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6BC7D612D751FB4F82612266 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RnDRxProgramming-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6D60A048FA65681EA389532F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-RnDRxProgramming/Pods-RnDRxProgramming-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxFlow/RxFlow.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxFlow.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RnDRxProgramming/Pods-RnDRxProgramming-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2030C5122149930400AACC64 /* Sources */ = {
@@ -278,6 +349,7 @@
 		};
 		2030C5292149930600AACC64 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 273C6B28357D572DC60A4518 /* Pods-RnDRxProgramming.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
@@ -298,6 +370,7 @@
 		};
 		2030C52A2149930600AACC64 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 225E5154EB797F61BB293D4F /* Pods-RnDRxProgramming.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
